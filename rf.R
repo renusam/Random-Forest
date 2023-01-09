@@ -1,7 +1,7 @@
 install.packages("randomForest")
 library("randomForest")
 
-titanic.train <- read.table("train.csv", header = TRUE, sep = ",")
+
 titanic.train$Survived <- as.factor(titanic.train$Survived)
 titanic.rf <- randomForest(Survived ~ . - Name - Cabin - Ticket,
                            data = titanic.train, 
