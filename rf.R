@@ -1,5 +1,5 @@
 install.packages("randomForest")
-library("randomForest")
+library("randomForest")  #second library
 
 titanic.train <- read.table("train.csv", header = TRUE, sep = ",")
 titanic.train$Survived <- as.factor(titanic.train$Survived)
